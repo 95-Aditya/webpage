@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>THE ITINERARY@Udhagamandalam</title>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+body {
+  background: #f0f8ea;
+  font-family: 'QuickSand',sans-serif;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background: #e54b4b;
+  color: #ebebd3;
+  position: relative;
+  padding: 1em 0;
+}
+
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.main-nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background: #464655;
+  height: 0;
+  overflow: hidden;
+}
+
+.main-nav-open {
+  height: auto;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  border-bottom: 1px solid #575766;
+}
+
+.main-nav li:last-child {
+  border-bottom: none;
+} 
+
+
+.main-nav a {
+  color: white;
+  display: block;
+  padding: 1em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover,
+.main-nav a:focus{
+  background: #e4b363;
+  color: #464655; 
+}
+
+.nav-icon {
+  display: inline-block;
+  font-size: 1.3em;
+  margin-right: .5em;
+  text-align: center;
+  width: 1.1em;
+  color: rgba(255,255,255,0.45);
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.2em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+  content: "";
+  display: block;
+  background: #ebebd3;
+  height: 3px;
+  width: 1.75em;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg) ;
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: rotate(90deg) translateY(3px);
+}
+
+@media only screen and (min-width: 700px){
+  .menu-toggle {
+    display: none;
+  }
+  
+  .main-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+  }
+  
+  .main-nav li {
+    display: inline-block;
+    border: none;
+  }
+  
+  .main-nav a {
+    padding: 0;
+    margin-left: 2em;
+  }
+  
+  .main-nav a:hover,.main-nav a:focus {
+    background: transparent;
+  }
+  
+  .nav-icon {
+    display: none;
+  }
+}
+</style>
+<header>
+    <div class="wrapper">
+      <h1 class="logo">The ITINERARY<span>@Udhagamandalam</span></h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#"><i class="fa fa-home nav-icon"></i>About Us</a></li>
+          <li><a href="#"><i class="fa fa-info nav-icon"></i>Services</a></li>
+          <li><a href="#"><i class="fa fa-usd nav-icon"></i>Attractions</a></li>
+          <li><a href="#"><i class="fa fa-pencil nav-icon"></i>Activities</a></li>
+          <li><a href="#"><i class="fa fa-envelope nav-icon"></i>Packages</a></li>
+        </ul>
+      </nav>
+      
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+      
+    </div>
+</header>
+<!-- </head>
+<body> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/avalanche-hills-ooty-1656333416_e2680b8680086972e69d.webp" height="800"  "d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>She is charming, she is classy, she is unique, she is the Queen of Hill Stations in India.</h5>
+              <p>Udhagamandalam, popularly known as Ooty is a hill station that will surely mesmerise you with its beguiling beauty. Ooty nestles in the Nilgiri district of Tamil Nadu.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/pykara-lake-1656249850_4cd21e8e74536950a7c0.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pykara Lake</h5>
+              <p>Pykara reveals its true beauty during the monsoon and winter months. It is just 20 km away from ooty town.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/take-a-ride-in-the-toy-train-1653978188_8ac904b5bdb228abad78.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Toy Train</h5>
+              <p>Toy Train ride from Mettupalayam to Ooty, which is the only daily operational meter-gauge, rack railway in India, providing you with mesmerising views of the Nilgiris.</p>     
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/98000/98584-Oooty-Lake.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ooty Lake</h5>
+                <p> The Ooty Lake is an impressive spot in Nilgiris district. Surrounded by the majestically-tall eucalyptus trees and dotted with green bushes along the shores.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.revv.co.in/blogs/wp-content/uploads/2020/04/Self-Drive-Road-Trip-from-Bangalore-to-Bandipur-Forest-1280x720.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Mudumalai Tiger Reserve </h5>
+                <p>The picturesque view of road surrounded by green carpets.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<style>
+
+body {background-color: rgba(245, 204, 151, 0.795)}
+p{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: small;}
+
+table{ background-color: #08f82852; width: 70%;}
+th,td{border: 100px rgb(24, 23, 23); padding: 20px;}
+
+</style>    
+</head>
+<body>
+<!-- <p>She is charming, she is classy, she is unique – she is the Queen of Hill Stations in India.</p>     -->
+<br>
+<br>
+<h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><Center>About Us</Center></h3>
+<p style="font-size: medium;">At The ITINERARY@Udhagamandalam, we're here to plan the ITINERARY for tourists to explore ooty and its surrounding tourist places. Our Aim is to make your trip memorable and enjoyable for everyone. We believe that travel should be sustainable and responsible. Our team is made up of local communities and passionate travellers who have a good knowledge and experience in the travel industy. Our mission is to uphold the local communities without any involvement of third parties. We are here to help you and guide you in all forms.</p>
+<br>
+<h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><center>Services</center></h3>
+<img src="https://img.freepik.com/free-vector/hand-drawn-flat-travel-itinerary-template_23-2149656485.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724889600&semt=ais_hybrid"   class="rounded mx-auto d-block" alt="..."> 
+<h5 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><center>'Providing Hospitality The Correct Way'</center></h5>
+<p style="font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The ITINERARY@Udhagamandalam is here to provide a customizable tour schedule plans as per the wish of our customers. Our Planning Team is here to help you in all sorts of Bookings for Hotels, Adventure Activities,Jungle Safari, Transportation,etc... Our Team will quote you the best price based on the number of tourists. From our travel advisors to customer service team,we are all committed to making your travel experience unforgettable. We are thrilled to have helped thousands of travelers create unforgettable memories. There are essentially two tpes of Itineraries, namely General Itinerary and Personalized Itinerary.</p>
+
+<br>
+<br>
+<h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><center>Top Attractions</center></h3>
+<br>
+<div class="row">
+  <div class="col-xl-3">
+  <div class="card" style="width: 18rem;">
+    <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/21/879d40f7eaa2d4e5f0a0770bd8960419_1000x1000.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4><center>Doddabetta</center></h4> 
+      <p class="card-text">Flirting with the clouds above the Nilgiris is Doddabetta, the highest peak in Tamil Nadu. Rising above the misty green valleys of Ooty standing tall at  2,637 metres, Doddabetta lives up to its name, which translates to “big mountain.”</p>
+    </div>
+  </div>
+  </div>
+  <div class="col-xl-3">
+  <div class="card" style="width: 18rem;">
+    <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/pine-forest-1656503928_d6c35359757cbc521e1b.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h4><center>Pine Forest</center></h4> 
+        <p class="card-text">A journey of just 15 minutes from Ooty town centre will take you to the famed Pine Tree Forests of Ooty. These ancient woods are home to a wide variety of fauna, ranging from fluttering butterflies that delight the air to wild goats that roam the woods.</p>
+    </div>    
+  </div>  
+  </div>
+  <div class="col-xl-3">
+  <div class="card" style="width: 18rem;">
+      <img src="https://peoplevillage.wordpress.com/wp-content/uploads/2019/11/dsc0131.jpg?w=1000" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h4><center>CSI Church of Ascension Lovedale</center></h4> 
+          <p class="card-text">The Church of The Ascension is a remarkable heritage building that displays breathtaking gothic architecture.</p>
+      </div>    
+    </div>  
+    </div>
+  <div class="col-xl-3">
+  <div class="card" style="width: 18rem;">
+        <img src="https://static.wixstatic.com/media/71d62d_8f0b5d1353ec4d9791f68ee0d636353b~mv2.jpeg/v1/fill/w_678,h_452,al_c,q_80/images%20(16).jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4><center>Avalanche Lake</center></h4> 
+            <p class="card-text">Avalanche Lake, a natural, crystal blue freshwater body. The lake has some of the best views of the Nilgiris, overlooking the hills draped in perfectly aligned tea shrubs and the opulent greenery of the woods.</p>
+        </div>    
+    </div>  
+    </div>
+    <div class="col-xl-3">
+    <div class="card" style="width: 18rem;">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/39/4d/55/kodanad-view-point.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4><center>Kodanad View Point</center></h4>  
+          <p class="card-text">Kodanad view point is about 18 km from kotagiri. It is well connected and by passing through tea gardens, one can reach the view point. The ridge walk is the most adventurous part. Kodanad view point offers its visitors the breathtaking beauty of the Blue Hill Mountains and views of the plains. </p>
+        </div>    
+    </div>  
+    </div>
+    <div class="col-xl-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://live.staticflickr.com/65535/50879154363_6fc0d06d98_b.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h4><center>Toda Village</center></h4>    
+        <p class="card-text">This small pastoral community living in the Nilgiri plateau offers an excellent insight into a world quite unlike our own. The Toda people reside in small hamlets called Mund, they are rectangular in design, with a barrel-vaulted roof that reaches down to the ground. You can visit and know about their history .</p>
+        </div>    
+    </div>  
+    </div>
+    <div class="col-xl-3">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.pinimg.com/736x/17/7b/8a/177b8a764258324b447215571ab51f34.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h4><center>Deer Park</center></h4>    
+          <p class="card-text">This is one of the high-altitude animal parks in India and is easily accessible by road. The Deer Park in Ooty is a haven for Nature lovers as it is wrapped in a chilly climate and surrounded by enticing flora and fauna. The Deer Park is also home to a wide variety of birds and rabbits.</p>
+          </div>    
+    </div>  
+    </div>
+    <div class="col-xl-3">
+      <div class="card" style="width: 18rem;">
+        <img src="https://sahapathika.com/wp-content/uploads/2018/09/ooty-tourism.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h4><center>Botanical Gardens</center></h4>    
+          <p class="card-text">The Government Botanical Garden in Ooty, spread over 55 acres, is a mesmerizing tourist site that has been attracting visitors for years. The Garden has a lot to offer for Nature lovers with its 600 varieties of plant species cultivated and exhibited here. The garden has a terraced layout. </p>
+          </div>    
+    </div>  
+    </div>
+</div>
+<br>
+<br>
+<center><h5 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">For More Attractions<a style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; "  href="..."> Click Here </a></h5></center>  
+<br>
+<br>
+<br>
+<h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><center>Adventure Activities</center></h3> <br>
+
+<div class="row">
+  <div class="col-xl-3">
+  <div class="card" style="width: 18rem;">
+    <img src="https://content.jdmagicbox.com/comp/def_content/camp-organisers/5-camp-organisers-5-a0et4.jpg?clr=" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4><center>Camping</center></h4> 
+      <!-- <p class="card-text">Flirting with the clouds above the Nilgiris is Doddabetta, the highest peak in Tamil Nadu. Rising above the misty green valleys of Ooty standing tall at  2,637 metres, Doddabetta lives up to its name, which translates to “big mountain.”</p> -->
+    </div>
+  </div>
+  </div>
+  <div class="col-xl-3">
+  <div class="card" style="width: 18rem;">
+      <img src="https://media1.thrillophilia.com/filestore/306cvlvpe4q8k63y6yxrw5ybakcn_r4xzisljce6n38z91us2dncg76nj_1587541487_DSC_0158.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4><center>Trekking</center></h4> 
+        <!-- <p class="card-text">Flirting with the clouds above the Nilgiris is Doddabetta, the highest peak in Tamil Nadu. Rising above the misty green valleys of Ooty standing tall at  2,637 metres, Doddabetta lives up to its name, which translates to “big mountain.”</p> -->
+      </div>
+  </div>
+  </div>
+  <div class="col-xl-3">
+  <div class="card" style="width: 18rem;">
+        <img src="https://media1.thrillophilia.com/filestore/u21e7tt1g9wnwbnaycwy3ddvwej4_shutterstock_196528748.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4><center>Jungle Safari</center></h4> 
+          <!-- <p class="card-text">Flirting with the clouds above the Nilgiris is Doddabetta, the highest peak in Tamil Nadu. Rising above the misty green valleys of Ooty standing tall at  2,637 metres, Doddabetta lives up to its name, which translates to “big mountain.”</p> -->
+        </div>
+  </div>
+  </div>
+  <div class="col-xl-3">
+  <div class="card" style="width: 18rem;">
+        <img src="https://media1.thrillophilia.com/filestore/9wlizj9vlovjq26tocxzzcbf9hbn_blive46.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4><center>Mountain Biking</center></h4> 
+          <!-- <p class="card-text">Flirting with the clouds above the Nilgiris is Doddabetta, the highest peak in Tamil Nadu. Rising above the misty green valleys of Ooty standing tall at  2,637 metres, Doddabetta lives up to its name, which translates to “big mountain.”</p> -->
+        </div>
+  </div>
+  </div>
+</div>  
+<br>
+<br>
+<center><h5 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">For More Adventures<a style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; "  href="..."> Click Here </a></h5></center>  
+<br>
+<br>
+<h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><center>Packages</center></h3> 
+<center><table style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+<tr>
+  <th>Tour Package</th>
+  <th>Travel Package</th>
+  <th>Special Interest Package</th>
+  <th>Inbound Package </th>
+</tr>
+<tbody class="table-group-divider table-divider-color">
+<tr>
+  <td>This Itinerary includes Accomodation, Travel, Site Visitings, Etc...For Additional info click below. </td>
+  <td>An Itinerary especially for travel. For Additional info click below.</td>
+  <td>Seperate Itineraries for Adventure, Cultural, Historical.For Additional info click below.</td>
+  <td>An Itinerary prepared for foreigners to visit our country.For Additional info click below.</td>
+</tr>
+<tr>
+  <td><input type="button" value="Click Here"></td>
+  <td><input type="button" value="Click Here"></td>
+  <td><input type="button" value="Click Here"></td>
+  <td><input type="button" value="Click Here"></td>
+</tr>
+</tbody>
+</table></center>
+<br>
+<br>
+<h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><center>Ask Your Queries</center></h3> <br>
+
+<center><input  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: bisque;"  type="text" value="Name : "  size="35" ></center>
+<br>
+<center><input  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: bisque;"  type="text" value="Email : "  size="35" ></center>
+<br>
+<center><textarea value="Message" cols="42" rows="5" style="background-color: bisque; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Message Us:</textarea></center>
+<center><input type="button" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: bisque;" value ="Submit" ></center>
+<br>
+<br>
+<h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><center>Follow Us On</center></h3> 
+<!-- <footer class="text-center bg-body-tertiary"> -->
+  <footer class="text-center text-bg-start">
+    <section class="mb-4" style="background-color: rgb(250, 213, 169);">
+      <a
+      data-mdb-ripple-init
+      class="btn btn-link btn-floating btn-lg text-body m-1"
+      href="#!"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="fab fa-twitter"></i
+    ><img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-512.png" width="25" height="25"></a>
+    </a>
+
+       <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png" width="30" height="30"></a>
+
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/56-linkedin-64.png" width="30" height="30"></a>
+      </a>
+
+       <a
+      data-mdb-ripple-init
+      class="btn btn-link btn-floating btn-lg text-body m-1"
+      href="#!"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="fab fa-linkedin"></i
+    ><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-256.png" width="30" height="30"></a>
+    </a>
+    </section>
+  </div>
+
+  <div class="text-center text-white p-4" style="background-color: #e54b4b;">
+    © 2024 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">theitinerary@udhagamandalam.com</a>
+  </div>  
+</footer>
+
+
+        
+</body>
+</html>
